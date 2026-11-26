@@ -214,18 +214,16 @@ function openPage(page) {
     if (!pages[page]) return;
 
     main.innerHTML = `
-        <section style="padding:20px">
+    <section class="service-page page-${page}">
+        <button class="back-button" onclick="goHome()">
+            ← กลับหน้าหลัก
+        </button>
 
-            <button onclick="goHome()">
-                ← กลับหน้าหลัก
-            </button>
-
-            <br><br>
-
+        <div class="page-content">
             ${pages[page]}
-
-        </section>
-    `;
+        </div>
+    </section>
+`;
 
     if (page === "family") {
         showFamily();
