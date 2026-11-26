@@ -533,3 +533,140 @@ main button {
     font-size: 18px;
   }
 }
+/* =================================
+   SMART OPD : 9 SERVICE HERO IMAGES
+================================= */
+
+.service-page .service-hero {
+  position: relative;
+  min-height: 260px;
+  padding: 35px 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+.service-page .service-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,.72),
+    rgba(0,0,0,.12)
+  );
+}
+
+.service-page .service-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.service-page .service-hero h1,
+.service-page .service-hero h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.service-page .service-hero p {
+  color: white;
+  font-size: 16px;
+}
+
+/* 1 นัดหมายออนไลน์ */
+.page-blue .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1551076805-e1869033e561?w=1200");
+}
+
+/* 2 จองคิวตรวจรักษา */
+.page-green .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1200");
+}
+
+/* 3 ผลตรวจและใบสั่งยา */
+.page-purple .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200");
+}
+
+/* 4 ดูแลครอบครัว */
+.page-pink .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200");
+}
+
+/* 5 เจาะเลือดใกล้บ้าน */
+.page-red .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200");
+}
+
+/* 6 สิทธิ์และชำระเงิน */
+.page-indigo .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200");
+}
+
+/* 7 จัดส่งยาถึงบ้าน */
+.page-orange .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200");
+}
+
+/* 8 ติดตามพัสดุ */
+.page-gold .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1200");
+}
+
+/* 9 ใบรับรองแพทย์ดิจิทัล */
+.page-cyan .service-hero {
+  background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200");
+}
+
+/* กล่องเนื้อหา */
+.service-page .page-content {
+  padding: 18px;
+}
+
+.service-page .form-card {
+  background: rgba(255,255,255,.96);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.service-page input,
+.service-page select,
+.service-page textarea {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #dce3eb;
+  margin: 8px 0 15px;
+  box-sizing: border-box;
+}
+
+.service-page .action-button {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .service-page .service-hero {
+    min-height: 230px;
+  }
+
+  .service-page .service-hero h1,
+  .service-page .service-hero h2 {
+    font-size: 25px;
+  }
+}
