@@ -146,6 +146,11 @@ min-height: 250px;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 18px;
     row-gap: 24px;
+    padding: 0;
+    margin-top: 15px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 .service-grid button {
