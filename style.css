@@ -1028,3 +1028,82 @@ textarea:focus {
   );
   z-index: 0;
 }
+/* SMART OPD SERVICE CARDS */
+.service-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+}
+
+.service-card {
+min-height: 155px;
+width: 100%;
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+padding: 15px 10px;
+border: 0;
+border-radius: 20px;
+background-size: cover;
+background-position: center;
+color: white;
+cursor: pointer;
+box-shadow: 0 5px 18px rgba(20,50,80,.18);
+}
+
+.service-card::before {
+content: “”;
+position: absolute;
+inset: 0;
+background: linear-gradient(
+to top,
+rgba(0,35,65,.88),
+rgba(0,35,65,.05)
+);
+}
+
+.service-card span {
+position: relative;
+z-index: 1;
+font-size: 15px;
+font-weight: 700;
+text-align: center;
+}
+
+.service-card.appointment {
+background-image: url(“https://images.unsplash.com/photo-1551076805-e1869033e561?w=900”);
+}
+
+.service-card.booking {
+background-image: url(“https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=900”);
+}
+
+.service-card.results {
+background-image: url(“https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900”);
+}
+
+.service-card.family {
+background-image: url(“https://images.unsplash.com/photo-1511895426328-dc8714191300?w=900”);
+}
+
+.service-card.blood {
+background-image: url(“https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=900”);
+}
+
+.service-card.rights {
+background-image: url(“https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900”);
+}
+
+.service-card.delivery {
+background-image: url(“https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=900”);
+}
+
+.service-card.tracking {
+background-image: url(“https://images.unsplash.com/photo-1607082349566-187342175e2f?w=900”);
+}
+
+.service-card.certificate {
+background-image: url(“https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900”);
+}
