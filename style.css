@@ -143,8 +143,9 @@ min-height: 250px;
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18px;
+    row-gap: 24px;
 }
 
 .service-grid button {
