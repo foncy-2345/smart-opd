@@ -1,117 +1,206 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-    <title>Smart OPD โรงพยาบาลอัจฉริยะ</title>
-
-<link rel="stylesheet" href="style.css?v=2">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart OPD - โรงพยาบาลอัจฉริยะ</title>
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 
 <body>
 
-    <div class="app">
+  <!-- LOGIN SCREEN -->
+  <section id="loginScreen" class="login-screen">
+    <div class="login-card">
 
-        <header class="header">
-            <div class="logo">
-                <span>✚</span>
-                <div>
-                    <h2>Smart OPD</h2>
-                    <p>โรงพยาบาลอัจฉริยะ</p>
-                </div>
-            </div>
+      <div class="login-logo">✚</div>
+      <h1>Smart OPD</h1>
+      <p>โรงพยาบาลอัจฉริยะ</p>
+      <h2>เข้าสู่ระบบ</h2>
 
-            <button class="notification">
-                🔔
-            </button>
-        </header>
+      <form id="loginForm">
+        <label>เลขบัตรประชาชน</label>
+        <input type="text" id="loginCitizen"
+          maxlength="13" inputmode="numeric"
+          placeholder="กรอกเลขบัตรประชาชน 13 หลัก"
+          autocomplete="off" required>
 
-        <main>
+        <label>เบอร์โทรศัพท์</label>
+        <input type="tel" id="loginPhone"
+          maxlength="10" inputmode="numeric"
+          placeholder="กรอกเบอร์โทรศัพท์"
+          autocomplete="off" required>
 
-            <section class="welcome">
-                <h2>ยินดีต้อนรับกลับมา</h2>
-                <p>ดูแลสุขภาพของคุณได้ทุกที่ทุกเวลา</p>
-            </section>
+        <button type="submit" class="login-button">
+          เข้าสู่ระบบ
+        </button>
+      </form>
 
-            <section class="banner">
-                <h1>Smart OPD</h1>
-                <h3>ดูแลคุณ...ทุกช่วงเวลา</h3>
-                <p>สะดวก รวดเร็ว ดูแลครบ จบในแอปเดียว</p>
-            </section>
+      <div class="login-divider">หรือ</div>
 
-            <section class="services">
+      <button type="button" id="showRegister" class="register-button">
+        สมัครสมาชิกใหม่
+      </button>
 
-                <h2>บริการของเรา</h2>
+      <!-- REGISTER FORM -->
+      <form id="registerForm" style="display:none;">
+        <h2>สมัครสมาชิก</h2>
 
-                <div class="service-grid">
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" id="registerName"
+          placeholder="กรอกชื่อและนามสกุล" required>
 
-                    <button onclick="openPage('appointment')">
-                        📅
-                        <span>นัดหมายออนไลน์</span>
-                    </button>
+        <label>เลขบัตรประชาชน</label>
+        <input type="text" id="registerCitizen"
+          maxlength="13" inputmode="numeric"
+          placeholder="เลขบัตรประชาชน 13 หลัก"
+          autocomplete="off" required>
 
-                    <button onclick="openPage('booking')">
-                        🏥
-                        <span>จองคิวตรวจรักษา</span>
-                    </button>
+        <label>เบอร์โทรศัพท์</label>
+        <input type="tel" id="registerPhone"
+          maxlength="10" inputmode="numeric"
+          placeholder="เบอร์โทรศัพท์ 10 หลัก"
+          autocomplete="off" required>
 
-                    <button onclick="openPage('results')">
-                        📄
-                        <span>ผลตรวจและใบสั่งยา</span>
-                    </button>
+        <button type="submit" class="login-button">
+          สมัครสมาชิก
+        </button>
 
-                    <button onclick="openPage('family')">
-                        👨‍👩‍👧
-                        <span>ดูแลครอบครัว</span>
-                    </button>
+        <button type="button" id="backToLogin" class="register-button">
+          กลับหน้าเข้าสู่ระบบ
+        </button>
+      </form>
 
-                    <button onclick="openPage('blood')">
-                        🩸
-                        <span>เจาะเลือดใกล้บ้าน</span>
-                    </button>
-
-                    <button onclick="openPage('rights')">
-                        🛡️
-                        <span>สิทธิ์และชำระเงิน</span>
-                    </button>
-
-                    <button onclick="openPage('delivery')">
-                        🚚
-                        <span>จัดส่งยาถึงบ้าน</span>
-                    </button>
-
-                    <button onclick="openPage('tracking')">
-                        📦
-                        <span>ติดตามพัสดุ</span>
-                    </button>
-
-                    <button onclick="openPage('certificate')">
-                        📋
-                        <span>ใบรับรองแพทย์ดิจิทัล</span>
-                    </button>
-
-                </div>
-            </section>
-
-            <section class="appointment">
-                <h2>นัดหมายล่าสุด</h2>
-                <p>ยังไม่มีข้อมูลนัดหมาย</p>
-            </section>
-
-        </main>
-
-        <footer>
-            <button>🏠<span>หน้าหลัก</span></button>
-            <button>📋<span>ประวัติ</span></button>
-            <button>🔔<span>แจ้งเตือน</span></button>
-            <button>⚙️<span>ตั้งค่า</span></button>
-        </footer>
-
+      <p class="login-footer">
+        Smart OPD | Healthcare Service
+      </p>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+
+  <!-- MAIN APPLICATION -->
+  <div class="app" id="appRoot" style="display:none;">
+
+    <header class="header">
+      <div class="logo">
+        <span>✚</span>
+        <div>
+          <h2>Smart OPD</h2>
+          <p>โรงพยาบาลอัจฉริยะ</p>
+        </div>
+      </div>
+
+      <button class="notification"
+        type="button"
+        onclick="showTab('notifications')">
+        🔔
+      </button>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+      <section class="welcome">
+        <h2>ยินดีต้อนรับ</h2>
+        <p>ดูแลสุขภาพของคุณได้ทุกที่ทุกเวลา</p>
+      </section>
+
+      <section class="banner">
+        <h1>Smart OPD</h1>
+        <h3>ดูแลคุณ...ทุกช่วงเวลา</h3>
+        <p>สะดวก รวดเร็ว ดูแลครบ จบในแอปเดียว</p>
+      </section>
+
+      <section class="services">
+        <h2>บริการของเรา</h2>
+
+        <div class="service-grid">
+
+          <button onclick="openPage('appointment')">
+            📅 <span>นัดหมายออนไลน์</span>
+          </button>
+
+          <button onclick="openPage('booking')">
+            🏥 <span>จองคิวตรวจรักษา</span>
+          </button>
+
+          <button onclick="openPage('results')">
+            📄 <span>ผลตรวจและใบสั่งยา</span>
+          </button>
+
+          <button onclick="openPage('family')">
+            👨‍👩‍👧 <span>ดูแลครอบครัว</span>
+          </button>
+
+          <button onclick="openPage('blood')">
+            🩸 <span>เจาะเลือดใกล้บ้าน</span>
+          </button>
+
+          <button onclick="openPage('rights')">
+            🛡️ <span>สิทธิ์และชำระเงิน</span>
+          </button>
+
+          <button onclick="openPage('delivery')">
+            🚚 <span>จัดส่งยาถึงบ้าน</span>
+          </button>
+
+          <button onclick="openPage('tracking')">
+            📦 <span>ติดตามพัสดุ</span>
+          </button>
+
+          <button onclick="openPage('certificate')">
+            📋 <span>ใบรับรองแพทย์ดิจิทัล</span>
+          </button>
+
+        </div>
+      </section>
+
+      <section class="appointment">
+        <h2>นัดหมายล่าสุด</h2>
+        <p>ยังไม่มีข้อมูลนัดหมาย</p>
+      </section>
+
+    </main>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <footer class="bottom-nav">
+
+      <button type="button"
+        onclick="showTab('home')"
+        id="navHome">
+        <span>🏠</span>
+        <small>หน้าหลัก</small>
+      </button>
+
+      <button type="button"
+        onclick="showTab('history')"
+        id="navHistory">
+        <span>📋</span>
+        <small>ประวัติ</small>
+      </button>
+
+      <button type="button"
+        onclick="showTab('notifications')"
+        id="navNotifications">
+        <span>🔔</span>
+        <small>แจ้งเตือน</small>
+        <i id="notificationBadge" style="display:none;">0</i>
+      </button>
+
+      <button type="button"
+        onclick="showTab('settings')"
+        id="navSettings">
+        <span>⚙️</span>
+        <small>ตั้งค่า</small>
+      </button>
+
+    </footer>
+
+  </div>
+
+  <script src="script.js?v=11"></script>
 
 </body>
 </html>
