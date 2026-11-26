@@ -154,14 +154,14 @@ min-height: 250px;
 }
 
 .service-grid button {
-    background: white;
-    border: 1px solid #e8eff5;
+    background: transparent;
+    border: none;
     border-radius: 19px;
     min-height: 112px;
     padding: 13px 5px;
     font-size: 29px;
     color: #087fba;
-    box-shadow: 0 5px 15px #16495b12;
+    box-shadow: none;
     transition: 0.2s;
     cursor: pointer;
 }
