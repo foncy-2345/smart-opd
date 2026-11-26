@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Smart OPD โรงพยาบาลอัจฉริยะ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div class="logo">
+                <span>✚</span>
+                <div>
+                    <h2>Smart OPD</h2>
+                    <p>โรงพยาบาลอัจฉริยะ</p>
+                </div>
+            </div>
+
+            <button class="notification">
+                🔔
+            </button>
+        </header>
+
+        <main>
+
+            <section class="welcome">
+                <h2>ยินดีต้อนรับกลับมา</h2>
+                <p>ดูแลสุขภาพของคุณได้ทุกที่ทุกเวลา</p>
+            </section>
+
+            <section class="banner">
+                <h1>Smart OPD</h1>
+                <h3>ดูแลคุณ...ทุกช่วงเวลา</h3>
+                <p>สะดวก รวดเร็ว ดูแลครบ จบในแอปเดียว</p>
+            </section>
+
+            <section class="services">
+
+                <h2>บริการของเรา</h2>
+
+                <div class="service-grid">
+
+                    <button onclick="openPage('appointment')">
+                        📅
+                        <span>นัดหมายออนไลน์</span>
+                    </button>
+
+                    <button onclick="openPage('booking')">
+                        🏥
+                        <span>จองคิวตรวจรักษา</span>
+                    </button>
+
+                    <button onclick="openPage('results')">
+                        📄
+                        <span>ผลตรวจและใบสั่งยา</span>
+                    </button>
+
+                    <button onclick="openPage('family')">
+                        👨‍👩‍👧
+                        <span>ดูแลครอบครัว</span>
+                    </button>
+
+                    <button onclick="openPage('blood')">
+                        🩸
+                        <span>เจาะเลือดใกล้บ้าน</span>
+                    </button>
+
+                    <button onclick="openPage('rights')">
+                        🛡️
+                        <span>สิทธิ์และชำระเงิน</span>
+                    </button>
+
+                    <button onclick="openPage('delivery')">
+                        🚚
+                        <span>จัดส่งยาถึงบ้าน</span>
+                    </button>
+
+                    <button onclick="openPage('tracking')">
+                        📦
+                        <span>ติดตามพัสดุ</span>
+                    </button>
+
+                    <button onclick="openPage('certificate')">
+                        📋
+                        <span>ใบรับรองแพทย์ดิจิทัล</span>
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="appointment">
+                <h2>นัดหมายล่าสุด</h2>
+                <p>ยังไม่มีข้อมูลนัดหมาย</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <button>🏠<span>หน้าหลัก</span></button>
+            <button>📋<span>ประวัติ</span></button>
+            <button>🔔<span>แจ้งเตือน</span></button>
+            <button>⚙️<span>ตั้งค่า</span></button>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
