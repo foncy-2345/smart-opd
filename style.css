@@ -851,3 +851,24 @@ textarea:focus {
     margin: auto;
   }
 }
+/* ทำพื้นหลังการ์ดบริการให้โปร่งใส */
+.service-grid > button,
+.service-card,
+.services .service-grid button {
+  background: rgba(255, 255, 255, 0.48) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 15px rgba(30, 80, 120, 0.08);
+}
+
+/* เพิ่มความโปร่งใสเมื่อกด */
+.service-grid > button:active {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* ทำให้ข้อความและไอคอนชัดเจน */
+.service-grid button span {
+  color: #24445f;
+  font-weight: 600;
+}
