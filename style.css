@@ -933,3 +933,49 @@ textarea:focus {
   font-weight: bold;
   box-shadow: 0 6px 16px rgba(18, 54, 83, 0.2);
 }
+/* ===== PREMIUM MAIN HEADER ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 22px 20px;
+  box-sizing: border-box;
+  background: rgba(225, 242, 250, 0.35);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.header-brand-text h1 {
+  margin: 0;
+  color: #102f4b;
+  font-size: 34px;
+  font-weight: 950;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+.header-brand-text p {
+  margin: 6px 0 0;
+  color: #356781;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.main-header .notification {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #123b5b;
+  color: white;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(18,59,91,0.25);
+  cursor: pointer;
+  margin-left: 12px;
+}
