@@ -393,3 +393,31 @@ footer span {
 .service-grid button:active {
     transform: scale(0.96);
 }
+/* แก้ไขภาพบริการ 3 รายการ */
+
+/* 4. ดูแลครอบครัว */
+.service-grid button:nth-child(4) {
+  background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 65%),
+    url("https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600");
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* 7. จัดส่งยาถึงบ้าน */
+.service-grid button:nth-child(7) {
+  background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 65%),
+    url("https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600");
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* 9. ใบรับรองแพทย์ดิจิทัล */
+.service-grid button:nth-child(9) {
+  background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 65%),
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600");
+  background-size: cover !important;
+  background-position: center !important;
+}
