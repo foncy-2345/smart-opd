@@ -1017,3 +1017,14 @@ textarea:focus {
   position: relative;
   z-index: 2;
 }
+.service-grid button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,35,65,.88),
+    rgba(0,35,65,.08)
+  );
+  z-index: 0;
+}
