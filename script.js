@@ -22,6 +22,9 @@ const getData = (key, fallback = []) => {
 const saveData = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
+function getServiceImage(imageId) {
+  return `https://images.unsplash.com/${imageId}?auto=format&fit=crop&w=900&q=85`;
+}
 const serviceInfo = {
   appointment: {
     icon: "📅",
