@@ -1,0 +1,214 @@
+/* SMART OPD DESIGN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef8fc;
+    color: #173b52;
+}
+
+.app {
+    max-width: 600px;
+    margin: auto;
+    background: #f8fcff;
+    min-height: 100vh;
+    padding-bottom: 85px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 18px;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo span {
+    background: #078f91;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 13px;
+    font-size: 30px;
+}
+
+.logo h2 {
+    color: #087f83;
+    font-size: 21px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #8096a3;
+}
+
+.notification {
+    background: #e9f7f7;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/* WELCOME */
+
+.welcome {
+    padding: 22px 18px;
+}
+
+.welcome h2 {
+    font-size: 21px;
+    color: #17435a;
+}
+
+.welcome p {
+    font-size: 13px;
+    color: #8198a5;
+    margin-top: 6px;
+}
+
+/* BANNER */
+
+.banner {
+    margin: 0 16px;
+    padding: 27px 22px;
+    border-radius: 22px;
+    color: white;
+    background: linear-gradient(
+        120deg,
+        #078e91,
+        #52c6c3
+    );
+    box-shadow: 0 8px 20px #078f912b;
+}
+
+.banner h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.banner h3 {
+    font-size: 18px;
+}
+
+.banner p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 25px 16px;
+}
+
+.services h2,
+.appointment h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+}
+
+.service-grid button {
+    background: white;
+    border: 1px solid #e4eff3;
+    border-radius: 17px;
+    min-height: 105px;
+    padding: 12px 5px;
+    font-size: 27px;
+    color: #078f91;
+    box-shadow: 0 4px 12px #16495b0d;
+    transition: 0.2s;
+}
+
+.service-grid button:active {
+    transform: scale(0.95);
+    background: #e4f8f7;
+}
+
+.service-grid span {
+    display: block;
+    font-size: 11px;
+    color: #31576b;
+    margin-top: 9px;
+}
+
+/* APPOINTMENT */
+
+.appointment {
+    margin: 0 16px 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px #16495b0d;
+}
+
+.appointment p {
+    color: #91a5af;
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 5px;
+    border-top: 1px solid #e4eff3;
+    box-shadow: 0 -4px 15px #16495b0b;
+}
+
+footer button {
+    background: transparent;
+    border: none;
+    color: #078f91;
+    font-size: 20px;
+}
+
+footer span {
+    display: block;
+    font-size: 10px;
+    color: #567582;
+    margin-top: 4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 380px) {
+    .service-grid {
+        gap: 7px;
+    }
+
+    .service-grid button {
+        min-height: 95px;
+    }
+
+    .service-grid span {
+        font-size: 10px;
+    }
+}
