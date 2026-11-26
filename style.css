@@ -727,3 +727,127 @@ textarea {
     background-attachment: scroll !important;
   }
 }
+/* =================================
+   SMART OPD - PREMIUM UI UPGRADE
+================================= */
+
+/* แอนิเมชันเปลี่ยนหน้า */
+.service-page {
+  animation: pageEnter .45s ease both;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ปุ่มทุกปุ่ม */
+button,
+.action-button {
+  min-height: 52px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+button:active,
+.action-button:active {
+  transform: scale(.96);
+}
+
+/* กล่องกรอกข้อมูล */
+input,
+select,
+textarea {
+  min-height: 54px;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #d8e4ef;
+  background: rgba(255,255,255,.95);
+  transition: .25s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #168bd0;
+  box-shadow: 0 0 0 4px rgba(22,139,208,.13);
+}
+
+/* กล่องบริการ */
+.service-card,
+.form-card,
+.service-grid > * {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.service-card:active,
+.service-grid > *:active {
+  transform: scale(.97);
+}
+
+/* ปุ่มกลับ */
+.back-button {
+  min-width: 110px;
+  min-height: 46px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.9);
+  color: #176b9e;
+  border: 1px solid rgba(255,255,255,.8);
+  font-weight: 700;
+}
+
+/* หัวข้อ */
+.service-page h1,
+.service-page h2 {
+  line-height: 1.4;
+  letter-spacing: .2px;
+}
+
+/* กล่องเนื้อหา */
+.page-content {
+  padding: 20px;
+}
+
+/* รองรับมือถือ */
+@media (max-width: 600px) {
+  .service-page {
+    padding: 12px;
+  }
+
+  .form-card {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  button,
+  .action-button {
+    width: 100%;
+    min-height: 56px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* รองรับคอมพิวเตอร์ */
+@media (min-width: 768px) {
+  .service-page {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
