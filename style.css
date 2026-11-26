@@ -1107,3 +1107,49 @@ background-image: url(“https://images.unsplash.com/photo-1607082349566-1873421
 .service-card.certificate {
 background-image: url(“https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900”);
 }
+/* FIX SERVICE CARD BACKGROUND IMAGES */
+
+.service-grid button.service-card.appointment {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.booking {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.results {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.family {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.blood {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.rights {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.delivery {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.tracking {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
+
+.service-grid button.service-card.certificate {
+background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
+url(“https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
+}
