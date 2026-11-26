@@ -1153,3 +1153,112 @@ url(“https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&
 background: linear-gradient(to top, rgba(0,35,65,.85), transparent),
 url(“https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85”) center/cover no-repeat !important;
 }
+/* =====================================
+   FIX: SMART OPD SERVICE IMAGES
+   แก้ไขภาพพื้นหลังบริการทั้ง 9 รายการ
+===================================== */
+
+.service-grid > button.service-card {
+    background-color: #dceaf3 !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    height: 155px;
+    min-height: 155px;
+    padding: 0;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    border-radius: 20px;
+    position: relative;
+}
+
+/* 1. นัดหมายออนไลน์ */
+.service-grid > button.appointment {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1551076805-e1869033e561?w=700")
+    !important;
+}
+
+/* 2. จองคิวตรวจรักษา */
+.service-grid > button.booking {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=700")
+    !important;
+}
+
+/* 3. ผลตรวจและใบสั่งยา */
+.service-grid > button.results {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700")
+    !important;
+}
+
+/* 4. ดูแลครอบครัว */
+.service-grid > button.family {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1511895426328-dc8714191300?w=700")
+    !important;
+}
+
+/* 5. เจาะเลือดใกล้บ้าน */
+.service-grid > button.blood {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700")
+    !important;
+}
+
+/* 6. สิทธิ์และชำระเงิน */
+.service-grid > button.rights {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700")
+    !important;
+}
+
+/* 7. จัดส่งยาถึงบ้าน */
+.service-grid > button.delivery {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=700")
+    !important;
+}
+
+/* 8. ติดตามพัสดุ */
+.service-grid > button.tracking {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1607082349566-187342175e2f?w=700")
+    !important;
+}
+
+/* 9. ใบรับรองแพทย์ดิจิทัล */
+.service-grid > button.certificate {
+    background-image:
+    linear-gradient(to top, rgba(0,35,65,.85), transparent 75%),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700")
+    !important;
+}
+
+/* ตัวหนังสือบนภาพ */
+.service-grid > button.service-card span {
+    display: block;
+    width: 100%;
+    padding: 10px 3px;
+    background: rgba(0,35,65,.80);
+    color: white !important;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+}
