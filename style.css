@@ -160,14 +160,12 @@ min-height: 250px;
     transition: 0.2s;
     cursor: pointer;
 }
-/* พื้นหลังสีฟ้าอ่อนครอบการ์ดบริการทั้ง 9 รายการ */
 .service-grid {
     background: linear-gradient(135deg, #e3f4fc, #f1f9fd, #dceefa);
-    padding: 18px;
+    padding: 22px;
     border-radius: 24px;
     box-shadow: 0 5px 20px rgba(30, 120, 170, 0.08);
     margin-top: 15px;
-    gap: 14px;
 }
 
 /* ปรับขนาดบนโทรศัพท์ */
