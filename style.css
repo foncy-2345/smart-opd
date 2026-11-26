@@ -318,3 +318,78 @@ footer span {
         font-size: 28px;
     }
 }
+/* SMART OPD - REAL PHOTO SERVICE CARDS */
+
+.service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.service-grid button {
+    height: 155px;
+    min-height: 155px;
+    padding: 0;
+    border: none;
+    border-radius: 17px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 15px #173b5225;
+    font-size: 0;
+}
+
+.service-grid button:nth-child(1) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=500");
+}
+
+.service-grid button:nth-child(2) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1626315869436-d6781ba69d6e?w=500");
+}
+
+.service-grid button:nth-child(3) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500");
+}
+
+.service-grid button:nth-child(4) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1576765608866-5b51046452b5?w=500");
+}
+
+.service-grid button:nth-child(5) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=500");
+}
+
+.service-grid button:nth-child(6) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=500");
+}
+
+.service-grid button:nth-child(7) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1585435557343-3b092031a831?w=500");
+}
+
+.service-grid button:nth-child(8) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=500");
+}
+
+.service-grid button:nth-child(9) {
+    background-image: linear-gradient(0deg, #123c60bb, transparent 75%), url("https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=500");
+}
+
+.service-grid button span {
+    width: 100%;
+    padding: 10px 3px;
+    background: #123c60bb;
+    color: white !important;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 0 0 17px 17px;
+}
+
+.service-grid button:active {
+    transform: scale(0.96);
+}
