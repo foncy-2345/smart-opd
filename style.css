@@ -97,7 +97,17 @@ body {
     padding: 30px 22px;
     border-radius: 23px;
     color: white;
-    background: linear-gradient(120deg, #087fba, #42c5dc);
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0, 75, 115, 0.85),
+        rgba(0, 125, 160, 0.40)
+    ),
+    url("https://www.hatyaifocus.com/ckeditor/upload/news/8/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1/2564/%E0%B8%A1%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A1/19/%E0%B8%AA%E0%B8%87%E0%B8%82%E0%B8%A5%E0%B8%B2.jpeg");
+
+background-size: cover;
+background-position: center;
+min-height: 250px;
     box-shadow: 0 9px 22px #087fba35;
     position: relative;
     overflow: hidden;
